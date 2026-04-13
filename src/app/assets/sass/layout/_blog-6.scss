@@ -1,0 +1,9 @@
+@use "../utilities" as *;
+.h6-blog-wrapper {
+    display: flex;
+    justify-content: center;  // center both cards
+    gap: 50px;                // 50px space
+    flex-wrap: wrap;          // keep responsive
+  }
+
+  

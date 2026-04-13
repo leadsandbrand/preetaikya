@@ -1,0 +1,28 @@
+.cta-item {
+
+
+    display: flex;
+    align-items: center;
+    gap: 8px; /* 🔥 tight gap */
+    
+    padding: 15px 20px;
+    
+    font-size: 25px;
+    font-weight: 100;
+    color: #fff;
+  
+    border-radius: 8px;
+  }
+
+  .cta-value {
+   
+    gap: 2px;
+    min-width: 120px;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .volunteer{
+      font-size: 35px;
+  }

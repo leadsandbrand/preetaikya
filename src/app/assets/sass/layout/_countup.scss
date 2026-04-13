@@ -1,0 +1,127 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Countup CSS
+----------------------------------------*/
+.tj-countup-section {
+	position: relative;
+	z-index: 2;
+}
+
+/* MAIN WRAP */
+.countup-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--tj-color-theme-primary);
+	gap: 100px; /* keep desktop same */
+	border-radius: 12px;
+}
+
+/* ✅ MOBILE FIX ONLY (NO DESKTOP CHANGE) */
+@media (max-width: 768px) {
+	.countup-wrap {
+		gap: 20px; /* reduce spacing */
+		padding: 15px; /* add breathing space */
+	}
+}
+
+/* ✅ FIX CONTAINER WIDTH */
+@media (max-width: 768px) {
+	.container {
+		width: 100% !important;
+		max-width: 100% !important;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* COUNT ITEM */
+.countup-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	padding: 68px 50px 74px 50px;
+	position: relative;
+
+	@media #{$xl, $lg} {
+		padding: 55px 30px 60px 30px;
+	}
+
+	@media #{$md, $sm} {
+		width: 50%;
+		padding: 45px 30px 50px 30px;
+	}
+
+	/* ✅ MOBILE FIX */
+	@media #{$xs} {
+		width: 100%;
+		padding: 30px 10px; /* reduced padding */
+		text-align: center;
+
+		&:last-child {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+/* NUMBER */
+.inline-content {
+	font-size: 74px;
+	line-height: 1;
+	font-weight: var(--tj-fw-medium);
+	color: var(--tj-color-common-white);
+	font-family: var(--tj-ff-heading);
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 5px;
+	letter-spacing: -1.48px;
+
+	.odometer {
+		display: inline-flex;
+
+		.odometer-digit,
+		span {
+			display: inline-flex;
+			vertical-align: bottom;
+		}
+	}
+
+	@media #{$lg} {
+		font-size: 65px;
+	}
+	@media #{$md, $sm} {
+		font-size: 60px;
+	}
+	@media #{$xs} {
+		font-size: 50px;
+		justify-content: center;
+	}
+}
+
+/* TEXT */
+.count-text {
+	color: var(--tj-color-common-white);
+	display: block;
+	text-align: center;
+}
+
+/* SEPARATOR */
+.count-separator {
+	position: absolute;
+	width: 10px;
+	height: 90px;
+	top: 50%;
+	inset-inline-end: -5px;
+	transform: translateY(-50%);
+	opacity: 0.15;
+
+	@media #{$xs} {
+		top: inherit;
+		bottom: 0;
+		inset-inline-end: 50%;
+		transform: translate(0, 50%) rotate(90deg);
+	}
+}
+
+/* !END: Countup CSS */
