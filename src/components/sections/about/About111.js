@@ -5,12 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 const About111 = () => {
 	return (
-		<section className="tj-about-section section-gap">
+		<section  id="girl-child"  className="tj-about-section section-gap">
 			<div className="container">
 				<div className="row">
 					<div className="col-xl-6 col-lg-6 order-lg-2 order-1">
 						<div
-							className={`about-img-area wow fadeInLeft`}
+							className={`about-1	 wow fadeInLeft`}
 							data-wow-delay=".2s"
 						>
 							<div className="about-img overflow-hidden">
@@ -60,14 +60,18 @@ Through our FSSAI-registered, state-of-the-art kitchen in Bhopal, we have served
 
 Every meal we serve is more than food.</p>
 							</div>
-							<div className="wow fadeInUp  about1-button" data-wow-delay=".5s "  >
+							{/* <div className="wow fadeInUp  about1-button" data-wow-delay=".5s "  >
 								<ButtonPrimary
 									text={"Donate Now"}
 									url={"/about"}
 									isTextBtn={true}
 								
 								/>
-							</div>
+							</div> */}
+
+                        <div className="about1-button wow fadeInUp" data-wow-delay=".5s">
+							<ButtonPrimary text={"Donate Now"} url={"/about"} />
+						</div>
 						</div>
 						<div className=" about-bottom-area">
 

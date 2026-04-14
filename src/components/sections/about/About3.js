@@ -7,7 +7,7 @@ const About3 = ({ type }) => {
 				<div className="row">
 					<div className="col-xl-6 col-lg-6 order-lg-1 order-2">
 						<div
-							className="about-img-area style-2 wow fadeInLeft"
+							className="about-1 style-2 wow fadeInLeft "
 							data-wow-delay=".3s"
 						>
 							<div className="about-img overflow-hidden">

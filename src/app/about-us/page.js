@@ -1,4 +1,6 @@
 
+import Footer from "@/components/layout/footer/Footer"
+import Footercontact from "@/components/layout/footer/Footercontact"
 import Header from "@/components/layout/header/Header"
 import About1 from "@/components/sections/about/About1"
 import About3 from "@/components/sections/about/About3"
@@ -27,7 +29,7 @@ const pageabout=()=>{
      <Testimonial24/>
      <Testimonial25/>
     
-    
+       <Footercontact/>
     </div>
 }
 export default pageabout

@@ -139,8 +139,8 @@ START: Service CSS
 	gap: 10px;
   
 	padding: 6px 6px 6px 20px;
-	background: black ;
-	color: white;
+	background: white ;
+	color: black;
 	
      font-weight: 50px;
 	border-radius: 999px;
@@ -159,7 +159,7 @@ START: Service CSS
 	width: 36px;
 	height: 36px;
   
-	background: #0e2c2c;
+	background: rgb(236, 92, 154);
 	border-radius: 50%;
   
 	transition: all 0.3s ease;
@@ -173,8 +173,8 @@ START: Service CSS
   
   /* 🔥 HOVER EFFECT (OPPOSITE COLORS) */
   .h10-service-btn:hover {
-	background: #0e2c2c;
-	color: white;
+	background: white;
+	color: black;
   }
   
   .h10-service-btn:hover .h10-service-btn-icon {

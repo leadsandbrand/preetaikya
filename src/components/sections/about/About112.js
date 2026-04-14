@@ -5,12 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 const About112 = () => {
 	return (
-		<section className="tj-about-section section-gap">
+		<section  id="food-for-life" className="tj-about-section section-gap">
 			<div className="container">
 				<div className="row">
 					<div className="col-xl-6 col-lg-6 order-lg-1 order-2">
 						<div
-							className={`about-img-area wow fadeInLeft`}
+							className={`about-1 wow fadeInLeft`}
 							data-wow-delay=".2s"
 						>
 							<div className="about-img overflow-hidden">
@@ -59,14 +59,17 @@ We are building informed communities around dementia — replacing stigma with s
 
 Because no caregiver should feel alone.</p>
 							</div>
-							<div className="wow fadeInUp  about1-button" data-wow-delay=".5s "  >
+							{/* <div className="wow fadeInUp  about1-button" data-wow-delay=".5s "  >
 								<ButtonPrimary
 									text={"Donate Now"}
 									url={"/about"}
 									isTextBtn={true}
 								
 								/>
-							</div>
+							</div> */}
+							 <div className="about1-button wow fadeInUp" data-wow-delay=".5s">
+							<ButtonPrimary text={"Donate Now"} url={"/about"} />
+						</div>
 						</div>
 						<div className=" about-bottom-area">
 							<div

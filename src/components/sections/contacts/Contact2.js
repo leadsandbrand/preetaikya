@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Contact2 = () => {
 	return (
-		<section className="tj-contact-section section-gap section-gap-x">
+		<section className="tj-contact-section section-gap section-gap-x" id="contact-us">
 			<div className="container">
 				<div className="row">
 

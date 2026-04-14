@@ -55,8 +55,60 @@
 
 /* 🔥 ONLY ADD WHITE BG ON SCROLL */
 .h10-header.header-sticky.sticky {
+
+  
   background: #fff !important;
   transition: all 0.3s ease;
 }
 
+
+.has-dropdown {
+  position: relative;
+}
+
+/* Dropdown hidden by default */
+.has-dropdown .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+
+  z-index: 999;
+}
+
+/* Show on hover */
+.has-dropdown:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown li a {
+  display: block;
+
+  padding: 10px 16px !important;
+  line-height: normal !important;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.dropdown li a:hover {
+  background: #f5f5f5;
+}
 /* !END: Theme Header CSS */

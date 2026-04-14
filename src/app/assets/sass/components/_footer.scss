@@ -9,9 +9,9 @@ START: Theme Footer CSS
 	z-index: 1;
 	padding-top: 195px;
 	border-radius: 12px;
-	margin-top: 150px;
+	margin-top: 220px;
 	overflow: hidden;
-	@media #{$xl} {
+	@media #{$xl} {	
 		padding-top: 150px;
 	}
 	@media #{$lg} {
@@ -33,6 +33,7 @@ START: Theme Footer CSS
 	position: relative;
 	z-index: 1;
 	padding-top: 195px;
+	margin-top: 30px;
 	border-radius: 12px;
 	
 	overflow: hidden;
@@ -57,7 +58,7 @@ START: Theme Footer CSS
 
 .footer-main-area {
 	position: relative;
-	padding: 0px 0 90px 0;
+    margin-top: -70px;
 	@media #{$sm, $xs} {
 		padding: 70px 0;
 	}
@@ -509,6 +510,11 @@ START: Theme Footer CSS
 		padding: 20px 0;
 	}
 }
+.footer-last{
+	display: flex;
+	// align-items: center;
+	justify-content: center;
+}
 
 // footer 2
 .tj-footer-section {
@@ -840,11 +846,22 @@ START: Theme Footer CSS
    @media (max-width: 768px) {
 
 	/* 🔥 Reduce huge top spacing */
-	.tj-footer-section,
-	.tj-footer-section-contact-us {
+	.tj-footer-section
+	 {
 	  padding-top: 80px !important;
 	//   margin-top: 60px;
 	  border-radius: 0;
+	  margin-top: 300px;
+	}
+
+	@media( max-width:768px)
+	{
+		.tj-footer-section-contact-us {
+			padding-top: 80px !important;
+		  //   margin-top: 60px;
+			border-radius: 0;
+			// margin-top: 300px;
+		}
 	}
   
 	/* 🔥 Footer main spacing */

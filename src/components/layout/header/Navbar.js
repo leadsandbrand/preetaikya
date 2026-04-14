@@ -13,22 +13,22 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 	const project=makeActiveLink(navItems[2]);
 	const campaign =makeActiveLink(navItems[3])
 	const about = makeActiveLink(navItems[4]);
-
-	console.log(navItems);
+    const licence = makeActiveLink(navItems[5]);
+	
 
 	return (
 		<div className="menu-area d-none d-lg-inline-flex align-items-center">
 			<nav id="mobile-menu" className="mainmenu">
 				<ul>
 					<li
-						className={`has-dropdown ${
+						className={` ${
 							homeNav?.isActive ? "current-menu-ancestor" : ""
 						}`}
-					>
+					>  
 						<Link href={homeNav?.path ? homeNav?.path : "#"}>
 							{homeNav?.name}
 						</Link>
-						<ul className="sub-menu header__mega-menu mega-menu  ">
+						{/* <ul className="sub-menu header__mega-menu mega-menu  ">
 							<li>
 								<div className="mega-menu-wrapper">
 									<div className="container-fluid gap-60-25">
@@ -88,27 +88,50 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 									</div>
 								</div>
 							</li>
-						</ul>
+						</ul> */}
 					</li>
 					
+  
+					<li
+  className={`has-dropdown ${
+    about?.isActive ? "current-menu-ancestor" : ""
+  }`}
+>
+  <Link href={about?.path ? about?.path : "#"}>
+    {about?.name ? about?.name : "About Us"}
+  </Link>
 
+  <ul className="dropdown">
+    <li><a href="#">Guiding Spirit</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Group Ventures</a></li>
+  </ul>
+</li>
 
-
-					<li className={contactNav?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href={contactNav?.path ? contactNav?.path : "#"}>
-							{contactNav?.name ? contactNav?.name : "Contact"}
-						</Link>
-					</li>
-
-
-					<li   
+<li
   className={`${
+    licence?.isActive ? "current-menu-ancestor" : ""
+  }`}
+>
+  <Link href={licence?.path ? licence?.path : "#"}>
+    {licence?.name ? licence?.name : "Licence"}
+  </Link>
+</li>
+				
+<li
+  className={`has-dropdown ${
     project?.isActive ? "current-menu-ancestor" : ""
   }`}
 >
-  <Link href={project?.path ? project?.path : "#"}>
-    {project?.name ? project?.name : "Projects"}
+  <Link href={project?.path || "#"}>
+    {project?.name || "Projects"}
   </Link>
+
+  <ul className="dropdown">
+    <li><a href="#food-for-life">Food for Life</a></li>
+    <li><a href="#green-earth">Green Earth</a></li>
+    <li><a href="#girl-child">Girl Child Education</a></li>
+  </ul>
 </li>
 
 
@@ -123,15 +146,24 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 </li>
 
 
+  
+
+
 <li
-  className={`${
-    about?.isActive ? "current-menu-ancestor" : ""
+  className={`has-dropdown ${
+    contactNav?.isActive ? "current-menu-ancestor" : ""
   }`}
 >
-  <Link href={about?.path ? about?.path : "#"}>
-    {about?.name ? about?.name : "About Us"}
+  <Link href={contactNav?.path ? contactNav?.path : "#"}>
+    {contactNav?.name ? contactNav?.name : "Contact"}
   </Link>
+
+  <ul className="dropdown">
+    <li><a href="#contact-us">Corporate Office</a></li>
+    <li><a href="#contact-us">Contact Coordinates</a></li>
+  </ul>
 </li>
+
 				</ul>
 			</nav>
 		</div>

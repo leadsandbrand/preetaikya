@@ -32,6 +32,11 @@
 	,{ "id": 5,
 		"name": "About-us",
 		"path":"/about-us"
+	},
+	{
+		"id":6,
+		"name": "Licences",
+		"path":"/Licences"
 	}	
 	
 ]

@@ -13,8 +13,7 @@ const Hero10 = () => {
 							>
 								<div className="h6-hero-history-title"></div>
 								<p className="h6-hero-history-desc">
-									Recognized by industry leaders, of our award-winning team has
-									a proven record of delivering excellence across projects.
+								It’s easier to take than to give. It’s nobler to give than to take. The thrill of taking lasts a day. The thrill of giving lasts a lifetime.
 								</p>
 							</div>
 							<div
@@ -25,11 +24,15 @@ const Hero10 = () => {
 									className="circle-text"
 									style={{
 										backgroundImage:
-											"url('/images/icons/award-rounded-text.svg')",
+											"url('/images/icons/preet.round.svg')",
 									}}
 								></span>
 								<div className="circle-icon">
-									<i className="tji-w-dot"></i>
+									 <img src="/images/icons/preetaikyalogo_ImgID1.png" className="w-image"
+									 height={50}
+									 width={70}
+									 />
+									{/* <i className="tji-w-dot"></i> */}
 								</div>
 							</div>
 						</div>
@@ -45,10 +48,10 @@ const Hero10 = () => {
 								data-wow-delay=".7s"
 							>
 								<ButtonPrimary text={"Donate"} url={"/contact"} />
-								<div className="banner-desc">
+								{/* <div className="banner-desc">
 									Recognized by industryaward leaders, award winning team has be
 									a proven record.
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>

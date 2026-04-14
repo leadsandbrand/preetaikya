@@ -19,7 +19,7 @@ const Testimonials1 = () => {
 							<div className="heading-wrap-content">
 								<div className="sec-heading">
 									<h2 className="sec-title title-anim">
-										what <span>People</span>Say.
+										what <span>People </span> Say.
 									</h2>
 								</div>
 								<div

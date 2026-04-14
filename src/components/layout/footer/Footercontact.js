@@ -181,6 +181,7 @@ const Footercontact = () => {
 					</div>
 				</div>
 			</div>
+			<div className="footer-last ">  Design and developed By Leads and Brand Bhopal</div>
 			<div className="bg-shape-1">
 				<img src="/images/shape/pattern-2.svg" alt="" />
 			</div>
