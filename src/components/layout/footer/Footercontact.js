@@ -11,7 +11,7 @@ const Footercontact = () => {
 							<div className="footer-widget ">
 								<div className="footer-logo">
 									<Link href="/">
-										<img src="/images/logos/logo-2.Webp" alt="Logos" />
+										<img src="/images/logos/preet_logo1.png" alt="Logos" />
 									</Link>
 								</div>
 								<div className="footer-text">
